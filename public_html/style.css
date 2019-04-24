@@ -1,0 +1,350 @@
+@font-face {
+	font-family: "Lato-Light";
+	src: url('font/Lato-Light.ttf');
+}
+
+*{
+	font-family: Lato-Light;
+	margin: 0px;
+	scroll-behavior: smooth;
+}
+
+h1{
+	font-size: 3em;
+}
+
+/*font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;*/
+
+body{
+	margin: 0px 0px;
+	/*background-color: #e9e4e2;*/
+	background-image: url("bck/bck-body.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+
+header{
+	background: url("img/georgie-cobbs-467923-unsplash.jpg") 100% 100%;
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 3vh;
+	background-size: cover;
+	display: block;
+	background-attachment: fixed;
+}
+
+article{
+	font-size: 2.4vh;
+}
+
+
+
+.display_none{
+	display: none;
+}
+
+#fleche{
+	width: 10vw;
+	height: 10vw;
+	background-color: #5f5f5f;
+	border-radius: 50%;
+	position: fixed;
+	right: 2vw;
+	bottom: 10vh;
+	color: white;
+	line-height: 10vw;
+	text-align: center;
+	font-size: 6vw;
+}
+
+#button_go_top{
+	width: 10vw;
+	height: 10vw;
+}
+
+#image_go_top{
+	width: 10vw;
+	height: 10vw;
+	transform: rotate(180deg);
+}
+
+#profilepic{
+	height: 20vw;
+	width: 20vw;
+	margin: 7%;
+	border-radius: 50%;
+}
+
+
+
+a:link
+{
+	text-decoration:none;
+
+}
+
+.cv{
+	text-decoration:none;
+	color: black;
+	border: none;
+	margin: 7px;
+	display: flex;
+
+}
+
+
+a h2{
+	color: black;
+}
+
+#rs{
+	text-align: center;
+	
+}
+
+/*------------------------ Menu ------------------------*/
+
+	#menu{
+		background-size: cover;
+		position: fixed;
+		bottom: 0;
+		width: 100vw;
+		height: 100vh;
+		left: 0;
+		/*padding: 0.3vh;*/
+		transition: 0.5s;
+		transform: rotate3d(1,0,0,90deg);
+	}
+
+	#ul_menu
+	{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		padding: 0px;
+		font-size: 150%;
+	}
+
+	.fade{
+		/*background-color: #222328;*/
+		color: #222328;
+		padding:1vh 1vw;
+		border-bottom: solid 2px #222328;
+		/*display: inline-flex;*/
+		cursor: pointer;
+		
+	}
+
+	.fadecv{
+		background-color: #222328;
+		color: white;
+		padding:1vh 1vw;
+		display: inline-flex;
+	}
+
+
+	.fade:hover{
+		background-color: #5f5f5f;
+		transition: 0.5s;
+		color: white;
+	}
+
+	.fadecv:hover{
+		background-color: #5f5f5f;
+		transition: 0.5s;
+	}
+
+
+	#burgerMenu
+	{
+		position: fixed;
+		left: 2.5%;
+		top: 2.5%;
+		/*background: white;*/
+		height: 2.5em;
+		width: 2.5em;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+		transition: 1s;
+	}
+
+	.overflowHidden {
+		overflow: hidden;
+	}
+
+	.lineBurger
+	{	
+		background: #222328;
+		width: 75%;
+		height: 5px;
+		margin-top: 5px;
+		position: relative;
+		border-radius: 20%;
+		transition: 1s;
+	}
+
+#titre{
+	text-align: center;
+	padding: 8%;
+}
+
+ul{
+	text-align: center;
+}
+
+.conteneurLoader{
+	display: flex;
+	margin: 5px;
+}
+
+.conteneurLoader p{
+	margin: 0px;
+	padding: 0px;
+}
+
+.loader p{
+	font-size: 0%;
+}
+
+.loader{
+	margin-left: 8px;
+	width: 60%;
+	height: 20px;
+	background-color: #D0C9C4 ;
+	border: 1px solid black;
+
+}
+
+.load {
+	width: 0%;
+	transition: all 1s ease;
+	display: block;
+	background-color: #FCD647;
+	height : 20px;
+}
+
+.conteneurLoader p{
+	width: 15em;
+
+}
+
+.marge {
+	padding: 20px;
+}
+
+section h2{
+	font-size: 5vh;
+	background-color: #222328;
+	color: white;
+	padding: 2vh;
+	font-style: normal;
+}
+
+#love{
+	border-left: double 6px #D0C9C4;
+
+}
+
+.align{
+	margin: -10px 40px;
+	float: left;
+
+}
+
+.drawing{
+	height: 50vh;
+	margin: 3.5%;
+	border: double 10px black;
+}
+
+#drawings{
+	text-align: center;
+}
+
+#did{
+	border-left: double 6px #D0C9C4;
+}
+
+
+#detailcontact{
+	padding: 1vh;
+	margin: 1% 10%;
+	/*border-left: double 6px #D0C9C4;*/
+
+}
+#divref{
+	
+}
+
+#detail-exp{
+	display: wrap;
+	flex-wrap: wrap;
+	text-align: center;
+	align-items: center;
+}
+
+.title-exp{
+	font-weight: bold;
+}
+#detailref{
+	padding: 1vh;
+	margin: 1% 10%;
+	display: flex;
+	flex-direction: column;
+}
+
+#bouchon{
+	padding: 2vh;
+	margin: 1% 10%;
+	/*border-left: double 6px #D0C9C4;*/
+}
+
+#faivre{
+	padding: 2vh;
+	margin: 1% 10%;
+	/*border-left: double 6px #D0C9C4;*/
+}
+
+.refname{
+	font-weight: bold;
+}
+
+
+.wrap{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+h3{
+	font-size: 3.9vh;
+	text-align: center;
+	font-weight: bold;
+	/*border-bottom: #fbc807 5px double;
+	border-top: #fbc807 5px double;*/
+	margin: 50px;
+	padding: 10px;
+}
+
+h4{
+	font-size: 2.9vh;
+	font-weight: bold;
+}
+
+footer{
+	margin-bottom: 40px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+
+}
+
+hr{
+
+}
